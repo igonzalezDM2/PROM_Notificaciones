@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:useDefaultMargins="true"
+        >
+
+    <TextView
+        android:id="@+id/tvOperando1"
+        android:layout_columnWeight="1"
+        android:layout_column="0"
+        style="@style/Operando" />
+
+    <TextView
+        android:id="@+id/tvOperador"
+        android:layout_columnWeight="1"
+        android:layout_column="1"
+        style="@style/Operando" />
+
+    <TextView
+        android:id="@+id/tvOperando2"
+        android:layout_columnWeight="1"
+        android:layout_column="2"
+        style="@style/Operando"/>
+
+    </GridLayout>
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:id="@+id/etResultado"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Comprobar"
+        android:id="@+id/btnComprobar"/>
+
+
+</LinearLayout>
